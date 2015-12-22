@@ -1,0 +1,47 @@
+{
+  "name": "node-test-runner",
+  "version": "0.0.0",
+  "description": "A no-setup test runner",
+  "main": "index.js",
+  "dependencies": {
+    "babel-core": "^6.3.21",
+    "babel-loader": "^6.2.0",
+    "babel-preset-es2015": "^6.3.13",
+    "chai": "^3.4.1",
+    "deep-assign": "^2.0.0",
+    "karma": "^0.13.15",
+    "karma-chai": "^0.1.0",
+    "karma-chrome-launcher": "^0.2.2",
+    "karma-mocha": "^0.2.1",
+    "karma-mocha-reporter": "^1.1.2",
+    "karma-webpack": "^1.7.0",
+    "lazy-json": "0.0.11",
+    "minimist": "^1.2.0",
+    "mocha": "^2.3.4",
+    "path-exists": "^2.1.0",
+    "shelljs": "^0.5.3",
+    "update-notifier": "^0.6.0",
+    "webpack": "^1.12.9"
+  },
+  "bin": {
+    "ntr": "./cli.js"
+  },
+  "preferGlobal": true,
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/egoist/node-test-runner.git"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "EGOIST <0x142857@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/egoist/node-test-runner/issues"
+  },
+  "homepage": "https://github.com/egoist/node-test-runner#readme"
+}
