@@ -30,11 +30,19 @@ module.exports = {
     module: {
       loaders: [
         {
-          test: /\.js$/,
-          loaders: ['babel'],
+          test: /\.jsx?$/,
+          loaders: ['babel', 'xo'],
+          exclude: [/node_modules/]
+        },
+        {
+          test: /\.vue$/,
+          loaders: ['vue'],
           exclude: [/node_modules/]
         }
       ]
+    },
+    vue: {
+      js: 'babel!xo'
     }
   },
 
