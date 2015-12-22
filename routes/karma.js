@@ -9,7 +9,7 @@ module.exports = function () {
   var customConfigFile = path.join(process.cwd(), '.ntrrc')
   if (pathExists.sync(customConfigFile)) {
     var customConfig = requireJSON(customConfigFile, true)
-    config = deepAssign({}, config, customConfig)
+    config = deepAssign({}, config, customConfig.karma)
   }
   if (argv.w || argv.watch) {
     config.autoWatch = true
