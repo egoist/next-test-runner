@@ -13,6 +13,32 @@ $ npm install -g node-test-runner
 
 ### Karma
 
+Assuming you have a directory structure like:
+
+```bash
+├── src
+│   ├── css
+│   │   ├── class.js
+│   │   └── style.js
+│   ├── dom
+│   │   ├── each.js
+│   │   ├── is.js
+│   │   ├── isType.js
+│   │   └── manipulations.js
+│   └── simple.js
+└── tests
+    ├── css
+    │   ├── test-class.js
+    │   └── test-style.js
+    ├── dom
+    │   └── test-each.js
+    ├── helpers
+    │   └── create-elements.js
+    └── test-simple.js
+```
+
+Run:
+
 ```bash
 # run karma test once
 $ ntr karma
@@ -20,7 +46,7 @@ $ ntr karma
 $ ntr karma --watch/-w
 ```
 
-Check out default [Karma Configs](/conf/karma.conf.js), you can override all of them in `.ntrrc` file, like:
+Or you can customize your own directory structure, just check out default [Karma Configs](/conf/karma.conf.js), you can override all of them in `.ntrrc` file, like:
 
 ```json
 {
