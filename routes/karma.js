@@ -11,6 +11,10 @@ module.exports = function () {
     var customConfig = requireJSON(customConfigFile, true)
     config = deepAssign({}, config, customConfig)
   }
+  if (argv.w || argv.watch) {
+    config.autoWatch = true
+    config.singleRun = false
+  }
   var server = new Server(config, code => {
     console.log('Karma has exited with ' + code)
     process.exit(code)
