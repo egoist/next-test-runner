@@ -29,19 +29,26 @@ module.exports = {
   },
 
   webpack: {
+    resolve: {
+      extensions: ['', '.js', '.vue', '.jsx', '.css']
+    },
     module: {
       loaders: [
         {
-          test: /\.js$/,
+          test: /\.jsx?$/,
           loader: path.resolve(__dirname, '../node_modules/babel-loader'),
           exclude: [/node_modules/]
         },
         {
           test: /\.vue$/,
-          loaders: path.resolve(__dirname, '../node_modules/vue-loader'),
+          loader: path.resolve(__dirname, '../node_modules/vue-loader'),
           exclude: [/node_modules/]
         }
       ]
+    },
+    babel: {
+      presets: [require('babel-preset-es2015'), require('babel-preset-stage-0')],
+      plugins: [require('babel-plugin-transform-runtime')]
     },
     vue: {
       js: 'babel!xo'
