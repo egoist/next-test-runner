@@ -1,6 +1,6 @@
 {
   "name": "node-test-runner",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A no-setup test runner",
   "main": "index.js",
   "dependencies": {

@@ -1,3 +1,5 @@
+var path = require('path')
+
 module.exports = {
 
   // base path that will be used to resolve all patterns (eg. files, exclude)
@@ -31,7 +33,7 @@ module.exports = {
       loaders: [
         {
           test: /\.js$/,
-          loaders: ['babel'],
+          loader: path.resolve(__dirname, '../node_modules/babel-loader'),
           exclude: [/node_modules/]
         }
       ]
