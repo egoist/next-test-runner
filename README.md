@@ -1,4 +1,5 @@
-# node-test-runner
+<img src="http://ooo.0o0.ooo/2015/12/22/56796c0477718.png" align="right"/>
+# node-test-runner 
 
 I hate to installed all my test dependencies into my project directory, now you can install `node-test-runner` globally to test all your node projects.
 

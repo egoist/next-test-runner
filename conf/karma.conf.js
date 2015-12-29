@@ -35,8 +35,16 @@ module.exports = {
           test: /\.js$/,
           loader: path.resolve(__dirname, '../node_modules/babel-loader'),
           exclude: [/node_modules/]
+        },
+        {
+          test: /\.vue$/,
+          loaders: path.resolve(__dirname, '../node_modules/vue-loader'),
+          exclude: [/node_modules/]
         }
       ]
+    },
+    vue: {
+      js: 'babel!xo'
     }
   },
 
